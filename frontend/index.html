@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickBite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">🍔 QuickBite</div>
+    
+    <div class="center-toggle">
+      <button id="themeToggle">🌙 Toggle Theme</button>
+    </div>
+    
+    <div class="cart">
+      🛒 <span id="cartCount">0</span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Welcome to QuickBite</h1>
+    <p>Fast, Fresh, Delicious food — delivered to your door! 🚀</p>
+    <button id="startOrderingBtn">Start Ordering 🍽️</button>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="menu-section" id="menuSection">
+    <h2>🍽️ Our Menu</h2>
+
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search Dishes..." />
+      
+      <select id="categoryFilter">
+        <option value="All">All</option>
+        <option value="Main Course">Main Course</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Desserts">Desserts</option>
+        <option value="Beverages">Beverages</option>
+      </select>
+
+      <select id="vegFilter">
+        <option value="All">All</option>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-Vegetarian">Non-Vegetarian</option>
+      </select>
+    </div>
+
+    <div id="menu" class="menu-grid"></div>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section class="order-section">
+    <h2>📝 Your Order</h2>
+    <div id="orderSummary"></div>
+
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+      <input type="text" id="address" placeholder="Enter your address" required />
+      <input type="text" id="phone" placeholder="Enter your phone number" required />
+      <button type="submit" id="placeOrderBtn">🚀 Place Order</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 QuickBite. Made with ❤️ for Food Lovers
+  </footer>
+
+  <!-- JS FILE -->
+  <script src="app.js"></script>
+</body>
+</html>

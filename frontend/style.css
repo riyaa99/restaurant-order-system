@@ -1,0 +1,285 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+/* DARK MODE */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #ff4e50, #f9d423);
+  color: white;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.center-toggle {
+  flex: 1;
+  text-align: center;
+}
+
+.center-toggle button {
+  background: transparent;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart {
+  font-size: 24px;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffefef;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: #ff4e50;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #ff2c3a;
+}
+
+/* MENU SECTION */
+.menu-section {
+  padding: 40px 20px;
+}
+
+.menu-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.filters input,
+.filters select {
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 220px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-item {
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.menu-item button {
+  margin-top: 10px;
+  background: #ff4e50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-item button:hover {
+  background: #e03e41;
+}
+
+/* ORDER SECTION */
+.order-section {
+  padding: 40px 20px;
+  background: #f7f7f7;
+}
+
+.order-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#orderSummary {
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #ff4e50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.quantity-control button:hover {
+  background: #e03e41;
+}
+
+/* FORM */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 12px 25px;
+  background: #ff4e50;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #e03e41;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffefef;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+/* DARK MODE DETAILS */
+.dark-mode .hero {
+  background: #1e1e1e;
+}
+
+.dark-mode .menu-item {
+  background: #222;
+}
+
+.dark-mode .order-section {
+  background: #1e1e1e;
+}
+
+.dark-mode footer {
+  background: #1e1e1e;
+  color: #aaa;
+}
+
+.dark-mode .filters input,
+.dark-mode .filters select,
+.dark-mode form input {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode form button,
+.dark-mode .menu-item button {
+  background: #e53935;
+}
+
+.dark-mode .center-toggle button {
+  border-color: #ddd;
+}
